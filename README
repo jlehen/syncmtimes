@@ -1,0 +1,10 @@
+Synchronize files mtimes between a source dir and a destination dir.  I had to
+do this multiple times so make it public so I can get it when I need it ;-).
+
+Gathering and setting are done by two different processes communicating through
+a pipe, so it can work through ssh.
+
+- getmtimes.py takes no arguments.
+- setmtimes.py has two options: -n (no exec) and -v (verbose).
+
+The scripts are very basic so just execute them is the right directory.
