@@ -31,4 +31,7 @@ for line in fileinput.input():
 	if noexec:
 		continue
 	t = int(a[0])
-	os.utime(a[1], (t, t))
+	try:
+	    os.utime(a[1], (t, t))
+	except Exception as e:
+	    print e
